@@ -103,3 +103,4 @@ print(DataInstansMobil.make) # Akan menghasilkan AttributeError: type object 'Da
 
 
 
+
