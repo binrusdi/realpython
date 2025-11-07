@@ -4,9 +4,9 @@ Fungsi bisa di deklarasikan didalam suatu fungsi. Penerapannya berguna pada kasu
 """
 
 '''
-Contoh, jika membuat fungsi 'inner()' yang di deklarasikan didalam fungsi 'outer()', Maka:
-- FUngsi inner() bisa diakses didalam fungsi outer().
-- Fungsi inner() juga bisa diakses dari luar fungsi outer(), asalkan fungsi inner() tersebut dijadikan sebagai 'nilai balik fungsi outer()' -> untuk kemudian ditampung didalam variable, lalu di eksekusi.
+Contoh, jika membuat fungsi 'pemrosesan_pesan()' yang di deklarasikan didalam fungsi 'buat_pemrosesan_pesan()', Maka:
+- Fungsi pemrosesan_pesan() bisa diakses didalam fungsi buat_pemrosesan_pesan().
+- Fungsi pemrosesan_pesan() juga bisa diakses dari luar fungsi buat_pemrosesan_pesan(), asalkan fungsi pemrosesan_pesan() tersebut dijadikan sebagai 'nilai balik fungsi buat_pemrosesan_pesan()' -> untuk kemudian ditampung didalam variable, lalu di eksekusi.
 '''
 
 def buat_pemrosesan_pesan(pesan):
@@ -14,10 +14,10 @@ def buat_pemrosesan_pesan(pesan):
         print(f'Halo {nama}, {pesan}')
     return pemrosesan_pesan # referensi ke fungsi pemrosesan pesan
 
-selamat_datang = buat_pemrosesan_pesan('Selamat datang')
+selamat_datang = buat_pemrosesan_pesan('Selamat datang') # Fungsi luar
 selamat_tinggal = buat_pemrosesan_pesan(('Selamat tinggal'))
 
-selamat_datang('Rusdiana')
+selamat_datang('Rusdiana') # Fungsi dalam
 # Output: Halo Rusdiana, Selamat datang
 selamat_tinggal('Dian')
 # Output: Halo Dian, Selamat tinggal
