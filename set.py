@@ -15,7 +15,7 @@ print(a.union(b))
 # print(a|b) # ekuivalen
 # Output: {1, 2, 3, 4, 5, 6, 8}
 
-# intersection() -> mengambil nilai yang sama dari dua himpunan menggunakan metode intersection()
+# intersection() -> mengambil nilai yang sama dari dua himpunan
 print(a.intersection(b))
 # print(a & b) # ekuivalen
 # Output: {1, 2, 4}
@@ -30,3 +30,9 @@ print(a.symmetric_difference(b))
 # print(a^b) # ekuivalen
 # Output: {3, 5, 6, 8}
 
+# Superset dan subset
+induk = {2, 3, 4, 5, 6}
+anak = {3, 5, 6}
+
+print(induk.issuperset(anak))
+print(anak.issubset(induk))
