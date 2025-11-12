@@ -8,7 +8,20 @@
 a = {1, 2, 4, 6, 8}
 b = {1, 2, 3, 4, 5}
 
-# Operasi atau method pada set
+# ==Operasi atau method pada set== #
+
+# 1 add() -> menambahkan elemen ke dalam set. jika elem sudah ada tidak terjadi apa²
+c = {'apple', 'jeruk'}
+c.add('sirsak')
+print(c)
+
+# 2 clear -> menghapus isi set(all elemen)
+d = {1, 3, 4}
+print(d)
+d.clear()
+print(d)
+
+# 3 copy() -> mengembalikan salinan set
 
 # union() -> menggabungkan huruf dari kedua himpunan sambil menghilangkan duplikat
 print(a.union(b))
